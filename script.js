@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
       };
 
       try {
-        const res = await fetch("https://script.google.com/macros/s/YOUR_SCRIPT_ID_HERE/exec", {
+        const res = await fetch("https://script.google.com/macros/s/AKfycbzB3lRYe4SF5Qv12WOd4u9vYxHOFStrkUUmtIhhEI1lya3-TlFjEFC7MQjKLLarPc4d/exec", {
           method: "POST",
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(data)
