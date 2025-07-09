@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
       };
 
       try {
-        const res = await fetch("https://script.google.com/macros/s/AKfycbyRCAdyPpi2t47LTv1UsUQ5bczLiE5iT_SJQ2AQx4iXa1aORUWl0HyJwVOtOV-r_kb-/exec", {
+        const res = await fetch("https://script.google.com/macros/s/AKfycbyxzRUYm65GxRLfbPxvwHccKA4N8VkGk0eDYHBGgUFRRBazFjFtdFPo1x24DonlEt7E/exec", {
           method: "POST",
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(data)
