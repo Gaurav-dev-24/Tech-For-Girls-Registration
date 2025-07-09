@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech for Girls: Registration</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4b8b8b8b8b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1 class="title">
+        <span class="title-icon"><i class="fas fa-laptop-code"></i></span>
+        <span class="title-gradient">Tech for Girls</span>
+        <span class="title-sub">Registration</span>
+      </h1>
+      <form id="form">
+        <div class="input-group">
+          <label for="name"><i class="fas fa-user"></i> Name</label>
+          <input type="text" id="name" name="name" required placeholder="Enter your name">
+        </div>
+        <div class="input-group">
+          <label for="phone"><i class="fas fa-phone"></i> Phone Number</label>
+          <input type="tel" id="phone" name="phone" required placeholder="e.g. 9876543210" pattern="[0-9]{10}">
+        </div>
+        <div class="input-group">
+          <label for="email"><i class="fas fa-envelope"></i> Email</label>
+          <input type="email" id="email" name="email" required placeholder="e.g. you@email.com">
+        </div>
+        <div class="input-group">
+          <label for="college"><i class="fas fa-graduation-cap"></i> College Name</label>
+          <input type="text" id="college" name="college" required placeholder="Enter your college name">
+        </div>
+        <div class="input-group file-upload" id="fileUploadGroup" style="display:none;">
+          <label for="screenshot"><i class="fas fa-upload"></i> Upload File</label>
+          <input type="file" id="screenshot" name="screenshot" accept="image/*" required>
+        </div>
+        <div class="actions">
+          <button type="button" id="whatsappShare" class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i> <span style="font-weight:700;">Share on WhatsApp</span>
+          </button>
+          <span id="clickCounter">Click count: 0/5</span>
+          <div id="shareCompleteMsg" class="share-complete-msg" style="display:none;"><span class="checkmark"><i class="fas fa-check-circle"></i></span>Sharing complete. Please continue.</div>
+        </div>
+        <button type="submit" class="submit-btn">Submit Registration</button>
+      </form>
+      <div id="message" class="success-message" style="display:none;">
+        🎉 Your submission has been recorded. Thanks for being part of Tech for Girls!
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
